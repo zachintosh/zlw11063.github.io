@@ -1,0 +1,121 @@
+body {
+    padding: 0;
+    color: #80cbc4;
+}
+
+/* Adjusts tabs so we don't get padding on sides */
+.tabs-adjuster {
+    padding: 0 !important;
+}
+
+/* Active tab title */
+.tabs .tab a.active {
+    color: #1de9b6 !important;
+}
+
+
+/* Hovering over tabs - affects tab titles */
+.tabs .tab a:hover {
+    color: #1de9b6 !important;
+}
+
+
+/* Tab titles */
+.tabs .tab a {
+    color: #80cbc4 !important;
+}
+
+
+/* Tabs */
+.tabs .tab {
+    background-color: #37474f;
+    transition: all .2s ease-in-out;
+}
+
+
+/* Hovering over tabs */
+.tabs .tab:hover {
+    background-color: #37474f;
+}
+
+/* Adjust tabs to meet full width of top */
+.tabs {
+    display: flex;
+    width: 100%;
+}
+
+/* Make tab fit as much as possible */
+.tab {
+    flex: 1;
+}
+
+/* Containers my content fits into */
+.content-container {
+    padding: 20px 40px !important;
+}
+
+.category-card {
+    width: 30%;
+    color: #37474f;
+    margin-right: 20px;
+}
+
+.card-content>img {
+    height: 65px;
+    width: 65px;
+}
+.card-title {
+    width: auto !important;
+}
+
+.category-image {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+#overview {
+    height: 200px;
+    /* border: solid 1px #80cbc4; */
+}
+
+.experienced {
+    color: #aa00ff;
+}
+.experienced:before {
+    content:"Experienced";
+}
+
+.familiar {
+    color: #00b0ff;
+}
+
+.familiar:before {
+    content: "Familiar";
+}
+
+.learning {
+    color: #ffab00;
+}
+
+.learning:before {
+    content: "Learning";
+}
+
+.header {
+    color: #1de9b6;
+    font-size: 40px;
+}
+
+.sub-header {
+    font-size: 22px;
+    color: #80cbc4;
+}
+
+.projects-container {
+    padding: 20px 0 0;
+}
+
+.flex-container {
+    display: flex;
+}
