@@ -22,6 +22,9 @@
     <!-- Our Script -->
     <script src="scripts/main.js"></script>
 
+    <!-- Components! -->
+    <script src="components/chip-filled/chip-filled.js"></script>
+
 </head>
 
 <body class="blue-grey darken-3">
@@ -33,16 +36,16 @@
                     <li class="tab">
                         <a href="#overview">Overview</a>
                     </li>
-                    <li class="tab">
+                    <li class="tab disabled">
                         <a href="#javascript">Javascript</a>
                     </li>
-                    <li class="tab">
+                    <li class="tab disabled">
                         <a href="#css">CSS</a>
                     </li>
-                    <li class="tab">
+                    <li class="tab disabled">
                         <a href="#angular">Angular</a>
                     </li>
-                    <li class="tab">
+                    <li class="tab disabled">
                         <a href="#nodejs">NodeJS</a>
                     </li>
                     <div class="indicator teal accent-3" style="z-index:1"></div>
@@ -51,7 +54,7 @@
             <div id="overview" class="col s12 content-container">
                 <!-- Github Data goes here -->
                 <div class="header">Zachary Williams</div>
-                <div class="sub-header">Front-End Web Developer</div>
+                <div class="sub-header">Web Developer</div>
                 <div id="github-data">
 
                 </div>
@@ -59,20 +62,16 @@
                     <div class="card category-card">
                         <div class="card-content">
                             <span class="card-title">Javascript</span>
-                            <img class="category-image" src="https://www.lyqwid.com/wp-content/uploads/2015/04/Javascript-Logo.png">
-                            <div class="category-content">
-                                <!-- <span class="experienced"></span> -->
-                                <!-- <span class="familiar"></span> -->
-                                <!-- <span class="learning"></span> -->
-                            </div>
+                            <img class="category-image" src="images/jslogo.png">
                             <div class="projects-container">
-                                <div class="chip">
-                                    <img src="https://library.uoregon.edu/sites/default/files/canvasicon_0.png" alt="Contact Person"> Canvas Transition Tool
-                                </div>
-                                <div class="chip">
-                                    <!-- <img src="https://library.uoregon.edu/sites/default/files/canvasicon_0.png" alt="Contact Person"> -->
-                                    Date Idea Site
-                                </div>
+                                <chip-filled title="Canvas Transition Tool" image="images/canvaslogo.png" github="https://github.com/byuitechops/d2l-to-canvas-conversion-tool">
+                                </chip-filled>
+                                <chip-filled title="Date Idea Site" image="images/bulb.png"
+                                    github="https://github.com/zlw11063/date-idea">
+                                </chip-filled>
+                                <chip-filled title="Word Replacement Module" image="images/canvaslogo.png"
+                                    github="https://github.com/byuitechops/ilearn-3-references">
+                                </chip-filled>
                             </div>
                         </div>
                         <div class="card-action">
@@ -84,35 +83,28 @@
                         <div class="card-content">
                             <span class="card-title">Angular</span>
                             <img class="category-image" src="https://material.angularjs.org/latest/img/logo.svg">
-                            <div class="category-content">
-                                <!-- <span class="experienced"></span> -->
-                                <!-- <span class="familiar"></span> -->
-                                <!-- <span class="learning"></span> -->
-                            </div>
                             <div class="projects-container">
-                                <div class="chip">
-                                    <img src="http://starwarsxwing.com/images/faction_star-wars_rebels.png?crc=228533653" alt="Contact Person"> X-Wing Manager
-                                </div>
+                                <chip-filled title="X-Wing Manager" image="images/starwars.png" github="https://gitlab.com/GyozaGuy/xwing-manager">
+                                </chip-filled>
+                                <chip-filled title="Ark Gaming Community Site" image="images/arklogo.png" github="https://bitbucket.org/zlw11063/arkcommsite/src/e98f66091ddceb1791c6d8812aa20d7ed00e0c83/src/app/?at=master">
+                                </chip-filled>
                             </div>
                         </div>
                         <div class="card-action">
                             <a href="#">View</a>
                         </div>
                     </div>
-
                     <div class="card category-card">
                         <div class="card-content">
                             <span class="card-title">NodeJS</span>
                             <img class="category-image" src="https://raw.githubusercontent.com/github/explore/fd96fceccf8c42c99cbe29cf0f8dcc4736fcb85a/topics/nodejs/nodejs.png">
-                            <div class="category-content">
-                                <!-- <span class="experienced"></span> -->
-                                <!-- <span class="familiar"></span> -->
-                                <!-- <span class="learning"></span> -->
-                            </div>
                             <div class="projects-container">
-                                <div class="chip">
-                                    <img src="https://library.uoregon.edu/sites/default/files/canvasicon_0.png" alt="Contact Person"> Canvas Transition Tool
-                                </div>
+                                <chip-filled title="Canvas Transition Tool" image="images/canvaslogo.png" github="https://github.com/byuitechops/d2l-to-canvas-conversion-tool">
+                                </chip-filled>
+                                <chip-filled title="Canvas Course Scrubber" image="images/scrubber.ico" github="https://github.com/byuitechops/canvas-course-scrubber">
+                                </chip-filled>
+                                <chip-filled title="Conversion Action Series" image="images/canvaslogo.png" github="https://github.com/byuitechops/action-series-master">
+                                </chip-filled>
                             </div>
                         </div>
                         <div class="card-action">
@@ -122,16 +114,16 @@
                 </div>
             </div>
             <div id="javascript" class="col s12 content-container">
-                Test 2
+                Tab 2
             </div>
             <div id="css" class="col s12 content-container">
-                Test 3
+                Tab 3
             </div>
             <div id="angular" class="col s12 content-container">
-                Test 4
+                Tab 4
             </div>
             <div id="nodejs" class="col s12 content-container">
-                Test 5
+                Tab 5
             </div>
         </div>
     </div>

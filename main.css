@@ -1,6 +1,13 @@
+:root {
+    --color-1: #1de9b6;
+    --color-2: #80cbc4;
+    --color-3: #37474f;
+}
+
+
 body {
     padding: 0;
-    color: #80cbc4;
+    color: var(--color-2);
 }
 
 /* Adjusts tabs so we don't get padding on sides */
@@ -10,32 +17,36 @@ body {
 
 /* Active tab title */
 .tabs .tab a.active {
-    color: #1de9b6 !important;
+    color: var(--color-1) !important;
 }
 
 
 /* Hovering over tabs - affects tab titles */
 .tabs .tab a:hover {
-    color: #1de9b6 !important;
+    color: var(--color-1) !important;
 }
 
 
 /* Tab titles */
 .tabs .tab a {
-    color: #80cbc4 !important;
+    color: var(--color-2) !important;
 }
 
 
 /* Tabs */
 .tabs .tab {
-    background-color: #37474f;
+    background-color: var(--color-3);
     transition: all .2s ease-in-out;
+}
+
+.tabs .tab.disabled>a {
+    color: gray !important;
 }
 
 
 /* Hovering over tabs */
 .tabs .tab:hover {
-    background-color: #37474f;
+    background-color: var(--color-3);
 }
 
 /* Adjust tabs to meet full width of top */
@@ -56,7 +67,7 @@ body {
 
 .category-card {
     width: 30%;
-    color: #37474f;
+    color: var(--color-3);
     margin-right: 20px;
 }
 
@@ -76,7 +87,7 @@ body {
 
 #overview {
     height: 200px;
-    /* border: solid 1px #80cbc4; */
+    /* border: solid 1px var(--color-2); */
 }
 
 .experienced {
@@ -103,13 +114,13 @@ body {
 }
 
 .header {
-    color: #1de9b6;
+    color: var(--color-1);
     font-size: 40px;
 }
 
 .sub-header {
     font-size: 22px;
-    color: #80cbc4;
+    color: var(--color-2);
 }
 
 .projects-container {
@@ -118,4 +129,12 @@ body {
 
 .flex-container {
     display: flex;
+}
+
+.chip:hover {
+    color: blue;
+}
+
+.disabled {
+    color: gray;
 }
